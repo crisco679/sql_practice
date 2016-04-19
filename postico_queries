@@ -11,10 +11,10 @@ UPDATE syntax_practice SET account_balance = 10.00 WHERE account_balance = 0  AN
 SELECT * FROM syntax_practice WHERE transactions_attempted >= 9
 
 --5
-SELECT * FROM syntax_practice WHERE account_balance > 300 LIMIT 3
+SELECT * FROM syntax_practice ORDER BY account_balance DESC LIMIT 3
 
 --6
-SELECT * FROM syntax_practice WHERE account_balance <= 10 LIMIT 3
+SELECT * FROM syntax_practice ORDER BY account_balance ASC LIMIT 3
 
 --7
 SELECT * FROM syntax_practice WHERE account_balance > 100
